@@ -1,0 +1,265 @@
+#{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: black;
+    margin: 0;
+    display: grid; 
+    grid-template-columns: 1.5fr; 
+    grid-template-rows: 0.5fr 2.5fr 0.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+
+html{
+    font-size: 62,5%;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 0.1rem 3.5rem;
+}
+
+.contenedor-logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: 1rem 1rem;
+    height: 1rem 1rem;
+    color: rgb(237, 238, 237);
+    background-color: #050d57;
+    text-align: center;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    grid-auto-columns: auto;
+    gap: 1em;
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    grid-area: logo;
+}
+
+.iglogo {
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.ytlogo {
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+.menu{
+    grid-area: menu;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover{
+    background-color: #275629;
+}
+
+header p{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    height: 1rem 1rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+.sponsors {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #275629;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    color: white;
+    font-weight: 100;
+}
+
+
+
+
+
+
+.introImagen{
+    display: flex;
+    width: 100%;
+    height: 40rem;    
+}
+
+
+
+.seccionNigeria {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.PlantelImagen1{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.seccion35 {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.PlantelImagen2{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion45 {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    font-size: 1,5rem;
+    font-weight: lighter;
+    margin: 1rem 3.5rem;
+       
+}
+
+
+
+
+.imagenSponsor1{
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+}
+.imagenSponsor2{
+    width: 10rem;
+    height:10rem;
+
+}
+
+h1{
+    color: #050d57;
+    font-family: sans-serif;
+    font: verdana;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+    }
+
+h2{
+    color: #275629;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h3{
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.volverainicio{
+    text-decoration: none;
+    color: #050d57;
+    text-align: center;
+    padding-right: 3.5rem;
+}
+
+.fotofecha{
+    width: 40rem;
+    height: 35rem;
+    border: double 1rem #275629 ;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+.noticiafoto{
+
+    width: 40rem;
+    height: 35rem;
+    border: double 1rem #275629 ;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+}
