@@ -1,0 +1,29 @@
+main{
+    h1 {
+    color: #050d57;
+    font-family: sans-serif;
+    font: verdana;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+    transition: all 2s;
+    &:hover {
+        color: #275629;
+        font-size: 4rem;
+    }
+        }
+    h2 {
+    color: #275629;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    transition: all 2s;
+    &:hover {
+        color: #0c0b41;
+        font-size: 3rem;
+    }
+        }
+    
+
+
+}

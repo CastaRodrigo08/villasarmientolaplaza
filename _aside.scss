@@ -1,0 +1,37 @@
+aside {
+
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenSponsor1 {
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+
+}
+
+.imagenSponsor2 {
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.volverainicio {
+    text-decoration: none;
+    color: #050d57;
+    text-align: center;
+    padding-right: 3.5rem;
+}
