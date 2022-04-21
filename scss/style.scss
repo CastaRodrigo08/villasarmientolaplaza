@@ -1,2 +1,59 @@
 @import "header";
-@
+@import "main";
+@import "aside";
+@import "footer";
+
+
+
+
+
+
+
+
+h3 {
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+.fotofecha {
+    width: 40rem;
+    height: 35rem;
+    border: double 1rem #275629;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.noticiafoto {
+
+    width: 40rem;
+    height: 35rem;
+
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+}
+
+.posiciones1 {
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width 700px) and (min-width 400px) {
+    .menu ul li{
+        flex-direction: column;
+    }
+}
