@@ -18,9 +18,8 @@
     "url": "https://github.com/CastaRodrigo08/villasarmientolaplaza/issues"
   },
   "homepage": "https://github.com/CastaRodrigo08/villasarmientolaplaza#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
-  },
-  "devDependencies": {}
+  }
 }

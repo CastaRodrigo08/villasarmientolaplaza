@@ -16,18 +16,18 @@ aside {
     justify-content: center;
 }
 
-.imagenSponsor1 {
-    width: 5rem;
-    height: 5rem;
-    display: inline-block;
-
-}
 
 .imagenSponsor2 {
     width: 5rem;
     height: 5rem;
 
 }
+.imagenSponsor1 {
+    @extend .imagenSponsor2;
+    display: inline-block;
+
+}
+
 
 .volverainicio {
     text-decoration: none;

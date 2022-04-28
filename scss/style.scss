@@ -9,7 +9,6 @@
 
 
 
-
 h3 {
     color: black;
     font-family: sans-serif;
@@ -52,8 +51,4 @@ h3 {
     height: 50%;
 }
 
-@media (max-width 700px) and (min-width 400px) {
-    .menu ul li{
-        flex-direction: column;
-    }
-}
+

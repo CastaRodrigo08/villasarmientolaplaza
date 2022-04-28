@@ -21,15 +21,14 @@ header {
   display: grid;
   grid-template-columns: 100%;
   justify-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   height: 1rem 1rem;
-  color: #edeeed;
-  background: #0c0b41;
+  color: #ffff;
+  background: #050d57;
   text-align: center;
-  font-style: normal;
   font-weight: 100;
   font-size: 1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Verdana, Geneva, Tahoma, sans-serif";
   grid-auto-columns: auto;
   gap: 1em; }
   header a {
@@ -46,19 +45,30 @@ header {
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.indeximagen {
+.indeximagen, .indeximagen2 {
   width: 30rem;
   height: 30rem;
   margin: auto;
   display: flex;
   justify-content: center; }
 
-.indeximagen2 {
-  width: 10rem;
-  height: 30rem;
-  margin: auto;
-  display: flex;
-  justify-content: center; }
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: row; }
+
+.menu ul li {
+  display: inline-block; }
+
+.menu ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px; }
+
+.menu ul li a:hover {
+  background-color: #275629; }
 
 main h1 {
   color: #050d57;
@@ -97,14 +107,12 @@ aside {
   display: flex;
   justify-content: center; }
 
-.imagenSponsor1 {
-  width: 5rem;
-  height: 5rem;
-  display: inline-block; }
-
-.imagenSponsor2 {
+.imagenSponsor2, .imagenSponsor1 {
   width: 5rem;
   height: 5rem; }
+
+.imagenSponsor1 {
+  display: inline-block; }
 
 .volverainicio {
   text-decoration: none;
@@ -132,79 +140,6 @@ footer {
   width: 3rem;
   height: 3rem;
   align-items: center; }
-
-html {
-  font-size: 62, 5%; }
-
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  flex-direction: row; }
-
-.menu ul li {
-  display: inline-block; }
-
-.menu ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  transition: all 0.4s linear;
-  border-radius: 5px; }
-
-.menu ul li a:hover {
-  background-color: #275629; }
-
-.introImagen {
-  display: flex;
-  width: 100%;
-  height: 40rem; }
-
-.seccionNigeria {
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem; }
-
-.PlantelImagen1 {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: center; }
-
-.seccion35 {
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem; }
-
-.PlantelImagen2 {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: center; }
-
-.seccion45 {
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem; }
-
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.6;
-  font-size: 1, 5rem;
-  font-weight: lighter;
-  margin: 1rem 3.5rem; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 100%; }
-  25% {
-    opacity: 75%; }
-  50% {
-    opacity: 50%; }
-  100% {
-    opacity: 0%; } }
 
 h3 {
   color: black;
