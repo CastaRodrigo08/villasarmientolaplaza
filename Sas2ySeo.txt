@@ -1,0 +1,6 @@
+SASS II Y SEO
+*Se realizó map-get, dandole difentes estilos , mixin con flex y grid y extend en el _header.scss 
+*Se realizó keyword en todas las paginas y descripción en todas las paginas.
+*Se verificó la correcta impementacion de Encabezados 
+*Se coloco titulo en todas las paginas
+*Se realizo media query en nav. 
