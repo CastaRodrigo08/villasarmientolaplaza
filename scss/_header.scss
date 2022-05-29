@@ -1,21 +1,21 @@
 $estilos: (
-color: #050d57,
-centro: center,
-1rem : 1rem,
-colorletra : #ffff,
-fuente : normal,
-letra : "Verdana, Geneva, Tahoma, sans-serif",
+    color: #050d57,
+    centro: center,
+    1rem : 1rem,
+    colorletra : #ffff,
+    fuente : normal,
+    letra : "Verdana, Geneva, Tahoma, sans-serif",
 
 );
 
-@mixin flex-spacebetween{
+@mixin flex-spacebetween {
     display: flex;
     justify-content: space-between;
 
 
 }
 
-@mixin grid-columns{
+@mixin grid-columns {
     display: grid;
     grid-template-columns: 100%;
 
@@ -32,38 +32,53 @@ letra : "Verdana, Geneva, Tahoma, sans-serif",
     @include flex-spacebetween;
     align-items: center;
 }
+
 .logo {
     width: 8rem;
     height: 8rem;
     display: flex;
     grid-area: logo;
     transition: all 2s;
+
     &:hover {
         width: 12rem;
         height: 12rem;
-            }
-        }
+    }
+}
 
+menu ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#check:checked~ul {
+    left: 0;
+}
 
 
 header {
-    @include grid-columns;
+    @include flex-spacebetween;
+    align-items: center;
     justify-items: map-get($estilos, centro);
-    padding:map-get($estilos, 1rem);
+    padding: map-get($estilos, 1rem);
     height: 1rem 1rem;
     color: map-get($estilos, colorletra);
     background: map-get($estilos, color);
-    text-align:map-get($estilos, centro);
-    font-style: map-get($estilos, normal );
+    text-align: map-get($estilos, centro);
+    font-style: map-get($estilos, normal);
     font-weight: 100;
     font-size: map-get($estilos, 1rem);
     font-family: map-get($estilos, letra);
     grid-auto-columns: auto;
     gap: 1em;
+
     a {
         color: white;
         text-decoration: none;
     }
+
     p {
         @include flex-spacebetween;
         padding: 1rem 1rem;
@@ -82,15 +97,59 @@ header {
     height: 30rem;
     margin: auto;
     display: flex;
-    justify-content:map-get($estilos, centro);
+    justify-content: map-get($estilos, centro);
 
 }
 
 .indeximagen2 {
     @extend .indeximagen
-
 }
 
+.menuicono img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menuicono,
+#check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menuicono {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #050d57;
+        width: 100%;
+        height: 100%;
+        right: 0;
+    }
+
+    .menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
 
 .menu ul {
     margin: 0;
@@ -114,10 +173,8 @@ header {
     background-color: #275629;
 }
 
-@media (max-width: 700px) and (min-width: 400px) {
-    .menu{
-        flex-direction: column;
-        align-items: center;
-    }
-
+.menuicono {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
